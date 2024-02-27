@@ -204,7 +204,7 @@ def deletecontact():
             break
     else:
         print("Contact not found.")
-# Main program loop
+
 while True:
     contact_menu()
     choice = input("Enter your choice (1-6): ")
