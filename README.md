@@ -61,6 +61,7 @@ while True:
         print("Invalid choice.Press enter to continue...")
 
 # Second Project -( Calculator )
+# Main Program Loop
 print("1. Addition")
 print("2. Subtraction")
 print("3. Multipication")
@@ -68,6 +69,7 @@ print("4. Division")
 print("5. Modulodivision")
 print("6. Square")
 print("Exit - enter any other Number which are not presented below . ")
+
 while True :
     choice = int(input("Enter the your choice which you want to operated in calculator....."))
     if choice<=6:
