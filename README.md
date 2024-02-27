@@ -59,3 +59,38 @@ while True:
         break
     else:
         print("Invalid choice.Press enter to continue...")
+
+# Second Project -( Calculator )
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multipication")
+print("4. Division")
+print("5. Modulodivision")
+print("6. Square")
+print("Exit - enter any other Number which are not presented below . ")
+while True :
+    choice = int(input("Enter the your choice which you want to operated in calculator....."))
+    if choice<=6:
+        a = int(input("Enter the first number for operation ......"))
+        b = int(input("Enter the second number for operation ......."))
+        if choice == 1 :
+            s = a + b
+            print(s)
+        elif choice == 2:
+            su = a - b
+            print(su)
+        elif choice == 3:
+            m = a * b
+            print(m)
+        elif choice == 4:
+            d = a / b
+            print(d)
+        elif choice == 5:
+            mo = a % b
+            print(mo)
+        elif choice == 6:
+            sq = a ** b
+            print(sq)
+    else:
+        print("Exit ....")
+        break
