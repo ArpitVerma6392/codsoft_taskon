@@ -94,3 +94,11 @@ while True :
     else:
         print("Exit ....")
         break
+# Third Project -(Password Generator)
+import random
+l=int(input("Enter the number of length of the generator : "))
+a1="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+a2="abcdefghijklmnopqrstuvwxyz"
+all=a1+a2
+r=''.join(random.sample(all,l))
+print(r)
