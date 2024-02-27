@@ -102,3 +102,34 @@ a2="abcdefghijklmnopqrstuvwxyz"
 all=a1+a2
 r=''.join(random.sample(all,l))
 print(r)
+
+# Fourth Project -( Rock,Paper and Scissors Game)
+import random
+while True:
+    print("In this game we just find the choice of the user snd computer if they are same then the output will come according to the ")
+    print("user's choice and computer's choice.....so Best of Luck of this game 😊😊")
+    user = input("Enter a choice which you want......(rock, paper, scissors): ")
+    ls = ["rock", "paper", "scissors"]
+    computer = random.choice(ls)
+    print(f"\nYour choice {user}, computer choice {computer}.\n")
+    if user == computer:
+        print(f"Both players selected {user}. It's a tie!")
+    elif user == "rock":
+        if computer == "scissors":
+            print("Rock smashes scissors! You win 👑👑 !")
+        else:
+            print("Paper covers rock! You lose 🤗🤗...")
+    elif user == "paper":
+        if computer == "rock":
+            print("Paper covers rock! You win 👑👑 !")
+        else:
+            print("Scissors cuts paper! You lose 🤗🤗...")
+    elif user == "scissors":
+        if computer == "paper":
+            print("Scissors cuts paper! You win 👑👑 !")
+        else:
+            print("Rock smashes scissors! You lose 🤗🤗...")
+
+    play_again = input("Play again? (yes/no): ")
+    if play_again.lower() != "yes":
+        break
